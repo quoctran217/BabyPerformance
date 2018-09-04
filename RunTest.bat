@@ -1,7 +1,7 @@
 @ECHO OFF
 
 REM Set variables
-SET SOURCE_DIR="D:\Projects\Baby_Shark\perf\BabyPerformance"
+SET SOURCE_DIR="F:\BabySharks\git\BabyPerformance"
 SET THREAD=%1
 SET RAMPUP=%2
 SET DURATION=%3
@@ -18,4 +18,4 @@ cd %JMETER_HOME%\bin
 
 REM Run load test and generate html report
 jmeter -n -t %JMX_Path% -l %LOG_PATH% -e -o %HTMLREPORT_PATH% -Jthreads=%THREAD% -Jrampup=%RAMPUP% -Jduration=%DURATION%
-::jmeter -g D:\Projects\Baby_Shark\perf\BabyPerformance\log\20180904.141740_threads.3.rampup.3.duration.30.csv -e -o %HTMLREPORT_PATH%
+::jmeter -g F:\BabySharks\git\BabyPerformance\log\20180904.141740_threads.3.rampup.3.duration.30.csv -e -o %HTMLREPORT_PATH%
